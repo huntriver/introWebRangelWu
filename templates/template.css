@@ -1,0 +1,35 @@
+
+	body{
+	background-color:orange	
+	}	
+	div.heading{
+		text-align: center
+	}
+	div.content{
+		background-color:red;
+		width: 80%;
+		margin:0 auto;
+		padding:10px 0px;
+		text-align: center
+	}
+	div.container{
+		margin:20px 50px;
+		overflow:auto
+	}
+	div.container>div{
+		float:left;
+		height:500px;
+
+	}
+	div.left-panel{
+		background-color:pink;
+		width:20%
+	}
+	div.mid-panel{
+		background-color:green;
+		width:40%
+	}
+		div.right-panel{
+		background-color:yellow;
+		width:40%
+	}
