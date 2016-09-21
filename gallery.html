@@ -6,113 +6,10 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 	<title>Resume</title>
-	
-	<style>
-	body{
-	background-color:orange	
-	}	
-	.clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
-	div.heading{
-		text-align: center
-	}
-	div.content{
-		background-color:red;
-		width: 80%;
-		margin:0 auto;
-		padding:10px 0px;
-		text-align: center
-	}
-	div.container{
-		margin:20px 50px;
-		/*overflow:auto*/
-	}
-	div.container>div{
-		float:left;
-		height:600px;
 
-	}
-	div.left-panel{
-		background-color:pink;
-		width:20%;
-		position:relative;
-	}
-	div.left-panel .links{
-		position: absolute;
-		top:50%;
-		-ms-transform:translateY(-50%);
-		-webkit-transform: translateY(-50%);
-		-moz-transform:translateY(-50%);
-		transform:translateY(-50%);
-		margin:0 auto;
-		width:100%;
-	}
-	div.left-panel ul{
-		 list-style-type:none;
-		 padding:0px;
-		 font-size:30px;
-		 font-weight:bold;
-	}
+    <link rel="stylesheet" type="text/css" href="style/resume.css"/>
+    <link rel="stylesheet" type="text/css" href="style/gallery.css"/>
 
-	div.mid-panel{
-		background-color:green;
-		width:40%;
-	
-	}
-	div.mid-panel p{
-		font-size: 20px;
-		font-weight: bold;
-
-	}
-	div .mid-panel ul{
-		 list-style-type:none;
-		 font-size:20px;
-		 text-align: left;
-	}
-		div.right-panel{
-		background-color:yellow;
-		width:40%
-	}
-	div.right-panel img{
-		margin:30px auto;
-		width:70%;
-		height:auto;
-	}
-	div.email-link{
-		font-size: 20px;
-	}
-
-	div.mid-panel .imgContainer{
-		width:90%;
-		margin:0 auto;
-		
-	}
-
-	div.mid-panel .img{
-		margin: 10px 15px;
-	    border: 1px solid #ccc;
-	    float: left;
-	    width: 25%;
-	}
-	div.mid-panel .img:hover{
-		 border: 1px solid #777;
-	}
-	div.mid-panel .img img{
-		width:100%;
-		height:auto;
-	}
-	div.mid-panel .imgContainerHor .img{
-		width:50%;
-		margin-left:25%;
-		
-	}
-	</style>
 </head>
 
 <body >
@@ -135,55 +32,35 @@
 				</div>
 			</div>
 			<div class="mid-panel" >
-			<div class="imgContainer clearfix">
-				<div class="img">
 
-					<img src="img/gallery/1.jpg">
-					
-				</div>
+				<table class="imgContainer">
+					<tr>
+						<td class="img"><a href="img/gallery/1.jpg" target="_blank" ><img src="img/gallery/1.jpg" alt="picture in gallery"></a></td>
+						<td class="img"><a href="img/gallery/2.jpg" target="_blank" ><img src="img/gallery/2.jpg" alt="picture in gallery"></a></td>
+						<td class="img"><a href="img/gallery/3.jpg" target="_blank" ><img src="img/gallery/3.jpg" alt="picture in gallery"></a></td>
+					</tr>
+					<tr>
+						<td class="img"><a href="img/gallery/4.jpg" target="_blank" ><img src="img/gallery/4.jpg" alt="picture in gallery"></a></td>
+						<td class="img"><a href="img/gallery/5.jpg" target="_blank" ><img src="img/gallery/5.jpg" alt="picture in gallery"></a></td>
+						<td class="img"><a href="img/gallery/6.jpg" target="_blank" ><img src="img/gallery/6.jpg" alt="picture in gallery"></a></td>
+					</tr>
+				</table>
+				<table class="imgContainerHor">
+					<tr>
 
-				<div class="img">
+						<td class="img imgHor"><a href="img/gallery/7.jpg" target="_blank" ><img src="img/gallery/7.jpg" alt="picture in gallery"></a></td>
 
-					<img src="img/gallery/2.jpg">
-					
-				</div>
-				<div class="img">
+					</tr>
+				</table>
 
-					<img src="img/gallery/3.jpg">
-					
-				</div>
-				<div class="img">
-
-					<img src="img/gallery/4.jpg">
-					
-				</div>
-
-				<div class="img">
-
-					<img src="img/gallery/5.jpg">
-					
-				</div>
-				<div class="img">
-
-					<img src="img/gallery/6.jpg">
-					
-				</div>
-			</div>
-			<div class="imgContainer imgContainerHor clearfix">
-				<div class="img">
-
-					<img src="img/gallery/7.jpg">
-					
-				</div>
-			</div>
 	</div>
-			<div class="right-panel">
+			<div class="right-panel clearfix">
 				<img src="img/selfie.png" alt="my selfie"/>
 				<p>put a photo here...</p>
 			</div>
 		</div>
 		<div class="email-link">
-			<a href="mailto:webmaster@example.com">Email me!</a>
+			<a href="mailto:rangelneko@gmail.com">Email me!</a>
 		</div>
 	</div>
 </body>

@@ -15,8 +15,8 @@
     <img src="img/logo.png" alt="logo"/>
 </div>
 <div class="content">
-    <h2>education</h2>
-    <div class="container clearfix">
+    <h2>Bio</h2>
+    <div class="container">
         <div class="left-panel">
             <div class="links">
                 <ul>
@@ -25,21 +25,14 @@
                     <li><a href="experience.html" title="experience">experience</a></li>
                     <li><a href="skills.html" title="skills">skills</a></li>
                     <li><a href="gallery.html" title="gallery">gallery</a></li>
+
                 </ul>
             </div>
         </div>
         <div class="mid-panel">
-            <dl>
-                <dt>2011-now</dt>
-                <dd>Bachelor in Fine Art from University at Albany</dd>
-                <dt>2008-2011</dt>
-                <dd>High school at China</dd>
-            </dl>
-            <object data="i/assignment%201.pdf"
-                    width="90%" height="70%">
-
-            </object>
-
+            <p>Name：Xiaoyu Wu</p>
+            <p>Gender: Female </p>
+            <p>Date of Birth:04/20/1993 </p>
         </div>
         <div class="right-panel clearfix">
             <img src="img/selfie.png" alt="my selfie"/>

@@ -1,0 +1,30 @@
+/*this style sheet is for gallery page*/
+
+
+div.mid-panel .imgContainer{
+    width:95%;
+    margin:0 auto;
+    border-collapse: separate;
+    border-spacing: 30px 10px;
+
+}/*set image container style*/
+
+div.mid-panel .img{
+    border: 1px solid #ccc;
+
+} /*set image border style and size*/
+div.mid-panel .img:hover{
+    border: 1px solid #777;
+}/*set image hover*/
+
+div.mid-panel .img img{
+    width:100%;
+    height:auto;
+}
+
+div.mid-panel .imgContainerHor{
+    width:45%;
+    margin:0 auto;
+
+}/*set the horizon image style*/
+
