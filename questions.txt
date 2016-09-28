@@ -1,0 +1,21 @@
+1.
+The message is :
+    firstjspage.html:11 Uncaught SyntaxError: Unexpected token var
+It is useful because it tells me what kind of error happens(syntax error) and where it happens( 11th line of this html page).
+
+2.
+Before clicking the button, there is no error message. After clicking the button, here is the error message:
+    firstjspage.html:17 Uncaught ReferenceError: fun is not defined
+It tells me that in line 17, the function 'fun' is not defined.
+
+3.
+If I changed the variables name, the console showed:
+    firstjspage.html:12 Uncaught ReferenceError: x is not defined
+It tells me I use variable x at line 12 but variable x is not defined.
+
+4.
+in this case, we could get the correct result even if we did not parse the variables. However, once we need to add the variables. the result is not what we expected.
+for example, '1'+'2'='12' not '3'
+
+5.
+once the input number is not an integer, it will ignore the decimal part if we use parseInt().

@@ -1,21 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <title>Skills</title>
+    <title>salaryCalculator</title>
     <link rel="stylesheet" type="text/css" href="style/resume.css"/>
-
+    <script>
+        function calc() {
+            var x = document.getElementById('rate').value;
+            var y = document.getElementById('hours').value;
+            var rate = parseInt(x);
+            var hours = parseInt(y);
+            var salary = rate * hours * 52;
+            document.getElementById('salary').innerHTML = ''+salary;
+        }
+    </script>
 </head>
 
 <body>
-<div class="heading">
+<header class="heading">
     <img src="img/logo.png" alt="logo"/>
-</div>
+</header>
 <div class="content">
-    <h2>experience</h2>
+    <h2>Salary Calculator</h2>
     <div class="container clearfix">
         <div class="left-panel">
             <div class="links">
@@ -30,22 +37,19 @@
             </div>
         </div>
         <div class="mid-panel">
-            <ol>
-                <li>Center gallery(photography intern)</li>
-                <li> Intermediate Chinese（Teaching Assistant）</li>
+            <div style="position:relative;top:50px;">
 
-            </ol>
-            <object data="i/audio/piano.mp3" >
+                <label for="rate">Enter the hourly rate:</label>
+                <input id="rate" type="text" name="rate" />
+                <br/>
+                <br/>
+                <label for="hours">Enter hours per week:</label>
+                <input id="hours" type="text" name="hours" />
+                <br><br>
+                <input type="submit" value="Check" onclick="calc()">
 
-            </object>
-            <object data="i/video/video.mp4">
-
-            </object>
-
-
-            <object data="https://www.youtube.com/watch?v=MhnDMKwvmEc" >
-
-            </object>
+                <p >The salary is:<span id="salary"></span></p>
+            </div>
         </div>
         <div class="right-panel clearfix">
             <img src="img/selfie.png" alt="my selfie"/>
