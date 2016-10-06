@@ -1,20 +1,11 @@
 <!DOCTYPE html>
-
+<html>
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <title>salaryCalculator</title>
     <link rel="stylesheet" type="text/css" href="style/resume.css"/>
-    <script>
-        function calc() {
-            var x = document.getElementById('rate').value;
-            var y = document.getElementById('hours').value;
-            var rate = parseInt(x);
-            var hours = parseInt(y);
-            var salary = rate * hours * 52;
-            document.getElementById('salary').innerHTML = ''+salary;
-        }
-    </script>
+
 </head>
 
 <body>
@@ -40,15 +31,15 @@
             <div style="position:relative;top:50px;">
 
                 <label for="rate">Enter the hourly rate:</label>
-                <input id="rate" type="text" name="rate" />
+                <input id="rate" type="text" name="rate"/>
                 <br/>
                 <br/>
                 <label for="hours">Enter hours per week:</label>
-                <input id="hours" type="text" name="hours" />
+                <input id="hours" type="text" name="hours"/>
                 <br><br>
                 <input type="submit" value="Check" onclick="calc()">
 
-                <p >The salary is:<span id="salary"></span></p>
+                <p id="salary" style="font-weight: normal;font-size:18px"></p>
             </div>
         </div>
         <div class="right-panel clearfix">
@@ -60,5 +51,6 @@
         <a href="mailto:rangelneko@gmail.com">Email me!</a>
     </div>
 </div>
+<script src="js/resume.js"></script>
 </body>
 </html>

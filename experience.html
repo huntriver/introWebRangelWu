@@ -1,11 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <title>Skills</title>
+    <title>Experience</title>
     <link rel="stylesheet" type="text/css" href="style/resume.css"/>
 
 </head>
@@ -31,21 +28,28 @@
         </div>
         <div class="mid-panel">
             <ol>
-                <li>Center gallery(photography intern)</li>
-                <li> Intermediate Chinese（Teaching Assistant）</li>
+                <li>
+                    <div class="jobTitle">Center gallery(photography intern)</div>
+
+                    <button id='button1' onclick="showDuties1()">Click</button>
+                    to see my top
+                    <input title="duties" id="dutiesNumber1" type="number" min="0" max="5"/>
+                    (max 5)job duties here.
+                    <ol id="duties1"></ol>
+                </li>
+                <li>
+                    <div class="jobTitle">Intermediate Chinese（Teaching Assistant）</div>
+
+                    <button id='button2' onclick="showDuties2()">Click</button>
+                    to see my top
+                    <input title="duties" id="dutiesNumber2" type="number" min="0" max="5"/>
+                    (max 5)job duties here.
+                    <ol id="duties2"></ol>
+                </li>
 
             </ol>
-            <object data="i/audio/piano.mp3" >
-
-            </object>
-            <object data="i/video/video.mp4">
-
-            </object>
 
 
-            <object data="https://www.youtube.com/watch?v=MhnDMKwvmEc" >
-
-            </object>
         </div>
         <div class="right-panel clearfix">
             <img src="img/selfie.png" alt="my selfie"/>
@@ -56,5 +60,7 @@
         <a href="mailto:rangelneko@gmail.com">Email me!</a>
     </div>
 </div>
+
+<script src="js/resume.js"></script>
 </body>
 </html>

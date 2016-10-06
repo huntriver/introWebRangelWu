@@ -12,7 +12,7 @@ div.content {
     background-color: red;
     width: 80%;
     margin: 0 auto;
-    padding: 10px 0px;
+    padding: 10px 0;
     text-align: center
 }
 
@@ -45,7 +45,7 @@ div.left-panel .links {
 
 div.left-panel ul {
     list-style-type: none;
-    padding: 0px;
+    padding: 0;
     font-size: 30px;
     font-weight: bold;
 }
@@ -81,12 +81,15 @@ div.mid-panel p {
 
 }
 
-div .mid-panel ol {
+
+div .mid-panel>ol {
     list-style-type: circle;
     font-size: 20px;
     text-align: left;
 }
-
+div .mid-panel>ol li .jobTitle{
+font-size:25px;
+}
 div.right-panel {
     background-color: yellow;
     width: 40%
