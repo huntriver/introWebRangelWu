@@ -72,3 +72,21 @@ function testInput(){
     }
 }
 
+function onload(){
+    var d = new Date();
+
+    var h=d.getHours();
+    var s;
+    if (h<12)
+        s="enjoy the rest of your morning";
+    else
+        if (h<17)
+            s="enjoy the afternoon";
+    else
+        s="have a good evening";
+
+    var firstVariable=document.createElement("h3");
+    var secondVariable=document.createTextNode(s);
+    firstVariable.appendChild(secondVariable);
+    document.getElementById("header").appendChild(firstVariable);
+}
