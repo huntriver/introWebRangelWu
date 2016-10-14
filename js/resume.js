@@ -57,3 +57,18 @@ function calc() {
         res = '.This is a great salary for me.';
     document.getElementById('salary').innerHTML = 'The salary is:' + salary+res;
 }
+
+
+function testInput(){
+    var x = document.getElementById('rate').value;
+    if (x == null || x == "") {
+        alert(" please fill in salary");
+        return false;
+    }
+    x = document.getElementById('hours').value;
+    if (x == null || x == "") {
+        alert(" please fill in hour");
+        return false;
+    }
+}
+
